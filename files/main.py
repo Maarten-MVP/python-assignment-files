@@ -35,7 +35,7 @@ def find_password(list):
 
         for line in file:
             if 'password' in line:
-                return line[line.find(' ')+1:]
+                return line[line.find(' ') + 1: -1]
         file.close()
 
 
